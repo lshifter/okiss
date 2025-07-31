@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meet Me Online</title>
+  <title>Someone’s Waiting For You</title>
   <style>
     * {
       margin: 0;
@@ -16,9 +16,8 @@
       font-family: 'Segoe UI', sans-serif;
       color: #fff;
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
+      justify-content: center;
       text-align: center;
       padding: 20px;
       position: relative;
@@ -31,10 +30,15 @@
       background: rgba(0, 0, 0, 0.55);
       z-index: 0;
     }
-    .content {
+    .content, .banner {
       position: relative;
       z-index: 1;
-      animation: fadeIn 1.2s ease-out both;
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     h1 {
       font-size: 2.2rem;
@@ -43,6 +47,9 @@
     p {
       font-size: 1.1rem;
       margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .btn {
       padding: 0.9rem 2rem;
@@ -59,17 +66,55 @@
     .btn:hover {
       background: #ffe6ec;
     }
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
+    .banner {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding: 20px;
+      margin-top: auto;
+    }
+    .banner h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .banner p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .bonus {
+      font-weight: bold;
+      color: #ffe600;
+      margin-bottom: 1rem;
+    }
+    .casino-btn {
+      padding: 0.6rem 1.4rem;
+      font-size: 1rem;
+      background: #ffe600;
+      color: #000;
+      border: none;
+      border-radius: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+    .casino-btn:hover {
+      background: #fff200;
     }
   </style>
 </head>
 <body>
   <div class="content">
-    <h1>I’m waiting for you here 💋</h1>
-    <p>I’m ready to meet — are you?</p>
-    <a href="https://luh2hrm.datepleasure.com/m99bd59?s1=@obmokina" class="btn">I am ready</a>
+    <h1>Someone special is waiting for you 💋</h1>
+    <p>I’m already here… curious, playful, and ready to connect. Don’t keep me waiting too long.</p>
+    <a href="https://luh2hrm.datepleasure.com/m99bd59?s1=@obmokina" class="btn">I'm ready too</a>
+  </div>
+
+  <div class="banner">
+    <h2>🎲 Take a moment for yourself</h2>
+    <p>Feeling bored or stressed? Escape, relax, and maybe win something exciting.</p>
+    <div class="bonus">🎁 Get up to €200 bonus + 100 free spins</div>
+    <a href="https://track.smartlink-gh.site/sl?id=64ec9b542f1b735a7c18aecc&pid=3751" class="casino-btn">Enter the fun zone</a>
   </div>
 </body>
 </html>
+
